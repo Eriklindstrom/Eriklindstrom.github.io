@@ -1,0 +1,37 @@
+/*CCS for Project 1*/
+body {
+    background: lightgray; 
+    font: 10px sans-serif;
+}
+    
+h1 {
+    font: 32px sans-serif;
+    font-weight: bold;
+    width:100%;
+    text-align:center;
+    }
+
+p {
+    font:14px sans-serif;
+    width:100%;
+    text-align:center;
+    }
+    
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.tooltip{
+  text-anchor: start;
+  font-family: sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  fill:black;
+}
