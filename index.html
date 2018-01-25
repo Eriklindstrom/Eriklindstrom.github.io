@@ -222,7 +222,7 @@ d3.csv("data.csv", function(error, data) {
             for (i = 0; i < legendClassArray.length; i++) {
               if (legendClassArray[i] != active_link) {
                 d3.select("#id" + legendClassArray[i])
-                  .style("opacity", 0.5);
+                  .style("opacity", 1);
               }
             }
            
@@ -236,7 +236,7 @@ d3.csv("data.csv", function(error, data) {
             //restore remaining boxes to normal opacity
             for (i = 0; i < legendClassArray.length; i++) {              
                 d3.select("#id" + legendClassArray[i])
-                  .style("opacity", 1);
+                  .style("opacity", "hidden");
             }
 
             //restore plot to original
@@ -273,7 +273,7 @@ d3.csv("data.csv", function(error, data) {
           .transition()
           .duration(1000)
           .delay(750)
-          .style("opacity", 1);
+          .style("visibility", "visible");
       }
     }
 
@@ -290,7 +290,7 @@ d3.csv("data.csv", function(error, data) {
         d3.selectAll(".class" + legendClassArray[i])
           .transition()
           .duration(1000)          
-          .style("opacity", 0);
+          .style("visibility", "hidden");
       }
     }
 
